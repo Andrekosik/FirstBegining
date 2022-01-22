@@ -41,36 +41,36 @@ if (isset($_GET['resetujzivotDurko'])) {
 
 ?>
 
-<br>
-meno: palko
-<br>
-priezvisko: Novak <br>
-
-zivot: <?php echo $_SESSION['zivotPalko']; ?><br>
-<br>
 
 
 
 
-<a href="?sekniPalko=-5"> Sekni palko novak </a><br>
+<table border="1">
 
-<a href="?resetujzivotpalko"> Resetuj Zivot Palko </a><br>
+    <tr>
+
+        <td>
+<?php
+
+                include "vypisPalko.php";
+                ?>
+        </td>
+
+        <td>
+
+            <?php
+
+                include "vypisDurko.php";
+
+            ?>
 
 
 
 
+        </td>
 
 
-<br>
-meno: Durko
-<br>
-priezvisko: Novak <br>
-
-zivot: <?php echo $_SESSION['zivotDurko']; ?><br>
-<br>
+    </tr>
 
 
-
-
-<a href="?sekniDurko=-5"> Sekni Durko Novak</a><br>
-<a href="?resetujzivotDurko"> Resetuj Zivot Durko </a><br>
+</table>
